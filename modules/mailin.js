@@ -6,7 +6,7 @@
 
 let path = require('path');
 let mailin = require('mailin');
-let config = require('./config');
+let config = require(path.join(__dirname, '..', 'config-default.json'));
 
 mailin.start(config.mailin);
 

@@ -4,6 +4,5 @@
     "port": 25,
     "disableWebhook": true
   },
-  "host": "disposable.dhc-app.com",
-  "keywordBlackList": ["admin", "postmaster", "system", "webmaster", "administrator", "hostmaster", "service", "server", "root"]
+  "host": "mail.mouxan.cn"
 }

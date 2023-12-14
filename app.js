@@ -19,9 +19,7 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 3600000}));
 app.use('/api', api);
 
 app.use(function(req, res, next) {
-  let err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+  next();
 });
 
 app.use(err => debug(err));
