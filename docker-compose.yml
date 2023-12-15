@@ -1,0 +1,12 @@
+version: '3.3'
+name: openai
+services:
+  Email:
+    container_name: Email
+    image: denghongcai/forsaken-mail:latest
+    volumes:
+      - ./mail/js/io.js:/forsaken-mail/modules/io.js
+      - ./mail:/forsaken-mail/public
+    ports:
+      - 25:25
+      - 3000:3000
